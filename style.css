@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*, 
+body{
+margin:0;
+padding: 0;
+box-sizing:border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: grey;
+}
+.social-icon{
+  color:#aaaaaa;
+  transition: color 0.2s;
+  text-decoration: none;
+  margin:0 10px;
+}
+.social-icon:hover{
+  color:#333333;
+}
+
+img{
+  width:100%;
+  height:auto;
+}
+ul{
+    list-style: none;
+}
+main{
+    margin:1rem;
+    display:grid;
+    grid-template-columns: 33% 1fr;
+    grid-gap:1rem;
+  filter:drop-shadow(0 0 0.4rem black);
+}
+h2{
+  color:white;
+}
+.personal{
+  margin:2rem 0;
+}
+.personal, .skills, .language{
+    padding:1rem;
+}
+.left, .experience, .education{
+background-color:#fff;
+}
+.left-image{
+    position: relative;
+    width:100%;
+}
+.left-image h2{
+    position: absolute;
+    bottom:0;
+    left:1rem;
+}
+
+.experience, .education, .skills, .Language{
+  line-height: 2;
+  padding:2rem;
+}
+.experience ul{
+  margin:2rem 0;
+}
+
+.skills ul{
+  margin:2rem 0;
+}
+
+.language ul{
+  margin:2rem 0;
+}
+
+.date{
+  color:green;
+}
+
+.present{
+    background-color: green;
+   color:white;
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+
+.education ul{
+  margin:2rem 0;
+}
+footer{
+  background-color:green;
+  padding:2rem 0;
+  text-align:center;
+  line-height:1.5;
+  color:white;
+}
+i{
+  color:green;
+}
+
+section.content {
+  align-items: center;
+  justify-content: center;  
+   position:relative;
+  top:30px;
+}
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
